@@ -25,10 +25,10 @@ public class TestJedis {
 		Jedis jedis = new Jedis("192.168.155.15", 6379);
 		
 		String pong = jedis.ping();
-		String pong = jedis.ping();
-		String pong = jedis.ping();
-		
+						
 		System.out.println(pong);
+		
+		System.out.println("获取K1的值："+jedis.get("k1"));
 		
 		Set<String> keys = jedis.keys("*");
 		
