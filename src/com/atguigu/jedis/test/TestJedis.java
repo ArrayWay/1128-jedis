@@ -25,10 +25,12 @@ public class TestJedis {
 		Jedis jedis = new Jedis("192.168.155.15", 6379);
 		
 		String pong = jedis.ping();
-		String pong = jedis.ping();
-		String pong = jedis.ping();
+		String pong2 = jedis.ping();
+		String pong3 = jedis.ping();
 		
 		System.out.println(pong);
+		System.out.println(pong2);
+		System.out.println(pong3);
 		
 		Set<String> keys = jedis.keys("*");
 		
