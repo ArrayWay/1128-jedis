@@ -26,7 +26,12 @@ public class TestJedis {
 		
 		String pong = jedis.ping();
 						
+		String pong2 = jedis.ping();
+		String pong3 = jedis.ping();
+		
 		System.out.println(pong);
+		System.out.println(pong2);
+		System.out.println(pong3);
 		
 		System.out.println("获取K1的值："+jedis.get("k1"));
 		
