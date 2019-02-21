@@ -25,6 +25,8 @@ public class TestJedis {
 		Jedis jedis = new Jedis("192.168.155.15", 6379);
 		
 		String pong = jedis.ping();
+		String pong = jedis.ping();
+		String pong = jedis.ping();
 		
 		System.out.println(pong);
 		
